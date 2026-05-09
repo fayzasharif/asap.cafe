@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASAP Cafe | Products</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="MyStyle.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="index.html">_asap,<span>Cafe</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="active" href="product.html">Products</a></li>
+        <li><a href="catering.html">Catering</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">Menu and products</p>
+      <h1>ASAP Cafe Products</h1>
+      <p>Explore drinks, desserts, and catering options. Add items to the sample cart to test the JavaScript interaction.</p>
+    </section>
+
+    <section class="section">
+      <div class="products-heading">
+        <div>
+          <p class="section-label">Featured items</p>
+          <h2>Popular orders</h2>
+        </div>
+        <div class="cart-widget">
+          <button class="cart-button" id="cartButton" type="button" aria-expanded="false" aria-controls="cartDropdown">
+            Cart <span id="cartCount">0</span>
+          </button>
+          <div class="cart-dropdown" id="cartDropdown" hidden>
+            <h3>Your Cart</h3>
+            <div class="cart-items" id="cartItems">
+              <p class="empty-cart">No products added yet.</p>
+            </div>
+            <div class="cart-total">Total: <span id="cartTotal">0 SAR</span></div>
+            <button class="checkout-button" id="checkoutButton" type="button">Checkout</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="asap-danish.jpeg" alt="ASAP Danish pastry with berries">
+          <h3>ASAP Danish</h3>
+          <p>Flaky pastry with cream and fresh berries.</p>
+          <span>24 SAR</span>
+          <button class="button add-cart" type="button" data-product="ASAP Danish" data-price="24">Add to Cart</button>
+        </article>
+        <article class="product-card">
+          <img src="cold-brew.jpeg" alt="ASAP cold brew coffee">
+          <h3>Cold Brew</h3>
+          <p>Bold chilled coffee served over ice.</p>
+          <span>20 SAR</span>
+          <button class="button add-cart" type="button" data-product="Cold Brew" data-price="20">Add to Cart</button>
+        </article>
+        <article class="product-card">
+          <img src="croissants.jpeg" alt="ASAP croissants in branded bags">
+          <h3>Croissants</h3>
+          <p>Buttery croissants packed fresh.</p>
+          <span>16 SAR</span>
+          <button class="button add-cart" type="button" data-product="Croissants" data-price="16">Add to Cart</button>
+        </article>
+        <article class="product-card">
+          <img src="cafe-latte.jpeg" alt="ASAP cafe latte with latte art">
+          <h3>Cafe Latte</h3>
+          <p>Smooth espresso and steamed milk.</p>
+          <span>18 SAR</span>
+          <button class="button add-cart" type="button" data-product="Cafe Latte" data-price="18">Add to Cart</button>
+        </article>
+      </div>
+      <p class="form-message" id="cartMessage" role="status"></p>
+    </section>
+
+    <section class="section muted">
+      <p class="section-label">Full menu</p>
+      <h2>Menu Images</h2>
+      <div class="menu-images">
+        <img src="menu1.jpeg" alt="ASAP English menu">
+        <img src="menu2.jpeg" alt="ASAP Arabic menu">
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="index.html">_asap,<span>Cafe</span></a>
+        <p>Specialty coffee, desserts, and catering for everyday moments.</p>
+        <div class="footer-contact-links">
+          <a href="mailto:asapcafe.sa@gmail.com"><span aria-hidden="true">✉</span> asapcafe.sa@gmail.com</a>
+          <a href="https://www.instagram.com/asap.sa1/" target="_blank"><span aria-hidden="true">◎</span> @asap.sa1</a>
+        </div>
+      </div>
+      <div>
+        <h3>Navigation</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="product.html">Products</a>
+        <a href="catering.html">Catering</a>
+      </div>
+      <div>
+        <h3>Project Info</h3>
+        <p>Student Name: faiza - retal - farah</p>
+        <p>Course Name/Code: Fundamentals of Web Design CIS201</p>
+        <p class="copyright-line">Copyright information <a href="https://yu.edu.sa/" target="_blank">@Alyamamah University 2026</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Myjs.js"></script>
+</body>
+</html>

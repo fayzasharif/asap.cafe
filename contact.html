@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASAP Cafe | Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="MyStyle.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="index.html">_asap,<span>Cafe</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="catering.html">Catering</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">Get in touch</p>
+      <h1>Contact ASAP Cafe</h1>
+      <p>Send a message, ask about catering, or follow us online.</p>
+    </section>
+
+    <section class="contact-layout">
+      <div class="contact-info">
+        <p class="section-label">Information</p>
+        <h2>Let's talk coffee</h2>
+        <div class="contact-item">
+          <strong>Email</strong>
+          <a href="mailto:asapcafe.sa@gmail.com">asapcafe.sa@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <strong>Phone</strong>
+          <a href="tel:+966548010320">+966 54 801 0320</a>
+        </div>
+        <div class="contact-item">
+          <strong>Instagram</strong>
+          <a href="https://www.instagram.com/asap.sa1" target="_blank">@asap.sa1</a>
+        </div>
+      </div>
+
+      <form class="form-card" id="contactForm">
+        <h2>Send a message</h2>
+        <label for="name">Full Name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button class="button" type="submit">Send Message</button>
+        <p class="form-message" id="formMessage" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="index.html">_asap,<span>Cafe</span></a>
+        <p>Specialty coffee, desserts, and catering for everyday moments.</p>
+        <div class="footer-contact-links">
+          <a href="mailto:asapcafe.sa@gmail.com"><span aria-hidden="true">✉</span> asapcafe.sa@gmail.com</a>
+          <a href="https://www.instagram.com/asap.sa1/" target="_blank"><span aria-hidden="true">◎</span> @asap.sa1</a>
+        </div>
+      </div>
+      <div>
+        <h3>Navigation</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="product.html">Products</a>
+        <a href="catering.html">Catering</a>
+      </div>
+      <div>
+        <h3>Project Info</h3>
+        <p>Student Name: faiza - retal - farah</p>
+        <p>Course Name/Code: Fundamentals of Web Design CIS201</p>
+        <p class="copyright-line">Copyright information <a href="https://yu.edu.sa/" target="_blank">@Alyamamah University 2026</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Myjs.js"></script>
+</body>
+</html>
